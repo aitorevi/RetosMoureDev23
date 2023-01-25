@@ -1,3 +1,12 @@
+/*
+ * Escribe un programa que reciba un texto y transforme lenguaje natural a
+ * "lenguaje hacker" (conocido realmente como "leet" o "1337"). Este lenguaje
+ *  se caracteriza por sustituir caracteres alfanuméricos.
+ * - Utiliza esta tabla (https://www.gamehouse.com/blog/leet-speak-cheat-sheet/)
+ *   con el alfabeto y los números en "leet".
+ *   (Usa la primera opción de cada transformación. Por ejemplo "4" para la "a")
+ */
+
 import java.util.Hashtable;
 import java.util.Scanner;
 
@@ -40,7 +49,7 @@ public class Main {
         frase = toUpperCase(frase);
         String fraseHacker = "";
         for (int i = 0 ; i < frase.length() ; i++){
-            fraseHacker = fraseHacker+alfabeto.get(frase.substring(i,i+1));
+            fraseHacker = fraseHacker + alfabeto.get(frase.substring(i,i+1));
         }
         System.out.println(fraseHacker);
     }
